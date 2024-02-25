@@ -27,7 +27,8 @@ Hex Codes : #(start) 43(Red) f8(Blue) 8a(green) -> Code : #43f88a
 You can use ```class="something"``` or ```id="unique"``` to select elements fo styling as following 
 
 
-```.selector 
+```CSS
+.selector 
 .selector.subSelector
 tag.selector.subSelector 
 
@@ -36,7 +37,7 @@ tag#id
 ```
 ### Descendant Selectors 
 
-```
+```CSS
 Syntax : 
 parent child(s){
     declarations
@@ -52,7 +53,7 @@ There is a difference between tag.class and tag .class - make sure to remember t
 
 ### Attribute Selectors 
 
-```
+```CSS
 Syntax : Only Attributes
 tag[attribute(s)]{
     declarations
