@@ -1,4 +1,13 @@
 # Notes 
+
+## Position and Layout 
+
+1. Static : Default position
+2. Relative : Relative to its original position
+3. Fixed : Like a fixed nav over scrolling
+4. Absolute : Absolutely relative to its parent
+5. Sticky : Mixture of static and fixed
+
 ## Semantic Tags 
 
 1. main
@@ -125,9 +134,12 @@ a[href$=".com"]{
 
 1. color 
 2. border
+   * border-radius 
+   * styles
     - dashed
     - dotted
     - solid
+  
   
 3. display 
     * block 
@@ -135,6 +147,7 @@ a[href$=".com"]{
 4. margin
 5. padding 
 6. *inherit* : this inherits the properties from the parent.
+
    
 ## Text 
 
@@ -152,6 +165,9 @@ a[href$=".com"]{
 
 1. column-count 
 2. column-gap 
+3. max-width
+4. white-space : nowrap
+5. box-sizing : border-box
 
 ## List 
 
