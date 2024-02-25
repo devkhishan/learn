@@ -1,4 +1,13 @@
 # Notes 
+## Semantic Tags 
+
+1. main
+2. section 
+3. article 
+4. aside 
+5. header 
+6. footer 
+7. nav
 
 ## Errors 
 
