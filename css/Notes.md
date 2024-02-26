@@ -181,3 +181,17 @@ a[href$=".com"]{
 1. span 
 2. em 
 
+## Pseudo Classes 
+
+1. hover 
+2. focus 
+3. valid 
+4. first-child 
+   
+## Pseudo Elements 
+
+1. after 
+2. before 
+3. first-letter
+4. first-line 
+5. selection
