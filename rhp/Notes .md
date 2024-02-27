@@ -124,7 +124,7 @@ public static void main(String[] args){
 }
 ```
 
-4. Fractional Knapsack 
+4. Fractional Knapsack -> Calculate Value/Unit and add to knapsack until it gets full from the maximum element one by one.
 
 5. Job Sequencing and Deadline 
 ```Java
@@ -538,3 +538,135 @@ int minInsertions(string s){
     return s.length()-longestPalindromeSubsequence(s); 
 }
 ```
+
+# Date : 26 Feb 2024 (Day-1)
+
+## Morning  :
+
+1. Longest Common Subsequence -> String 
+
+```Java 
+import java.util.*; 
+import java.io.*; 
+
+class longestCommonSubsequenceStrings{
+    public static void main(String[] args){
+        String a="abcde", b="abge";
+
+        int[][] dp = new int[a.length()+1][b.length()+1];
+        
+        for(int i=1;i<=a.length();i++){
+            for(int j=1;j<=b.length();j++){
+                if(a.charAt(i-1)==b.charAt(j-1)) dp[i][j] = dp[i-1][j-1]+1;
+                else dp[i][j] = Math.max(dp[i-1][j], dp[i][j-1]);
+                System.out.print(dp[i][j]+" ");
+            }
+            System.out.println();
+        }
+
+        int i=a.length(), j=b.length(); 
+        int pos=dp[i][j]-1; 
+        char[] ans = new char[pos+1];
+
+        while(i>0 && j>0){
+            if (dp[i-1][j]==dp[i][j]){
+                i-=1; 
+            }
+            else if (dp[i][j-1]==dp[i][j]){
+                j-=1;
+            } 
+            else{
+                ans[pos--]=a.charAt(i-1);
+                i--;
+                j--;
+            }
+        }
+        System.out.println(String.valueOf(ans));
+    
+    }
+}
+```
+
+2. Longest Palindromic Subsequence -> Reverse the string and perform LCS 
+
+3. Longest Common Substring  -> Length and String
+
+```Java 
+import java.io.*; 
+import java.util.*; 
+
+class longestCommonSubstring{
+    public static void main(String[] args){
+        String a = "abcde", b = "abcef"; 
+        int[][] dp = new int[a.length()+1][b.length()+1];
+        int max = 0;
+        int pos=0;
+        for(int i=1;i<=a.length();i++){
+            for(int j=1;j<=b.length();j++){
+                if (a.charAt(i-1)==b.charAt(j-1)){
+                    dp[i][j] = dp[i-1][j-1] + 1;
+                    if (max<dp[i][j]){
+                        max = dp[i][j];
+                        pos = i; 
+                    }
+                }
+            }
+        }
+        System.out.println("Length : " + max);
+        System.out.println("String : " + a.substring(pos-max,pos));
+    }
+}
+```
+
+4. Knapsack 
+
+```Java 
+import java.io.*; 
+import java.util.*; 
+
+class knapsack 
+{ 
+    public static int helper(int W, int wt[], int val[], int n, int[][] dp){
+         if (n==0) return 0; 
+         if (dp[n-1][W]!=-1) return dp[n-1][W];
+         
+         if (wt[n-1]>W) return helper(W,wt,val,n-1,dp);
+         return (dp[n-1][W] = Math.max(helper(W,wt,val,n-1,dp),val[n-1]+helper(W-wt[n-1],wt,val,n-1,dp)));
+    }
+    public static void main(String[] args) 
+    { 
+        int W=4;
+        int wt[]=new int[]{4,5,1}, val[] = new int[]{1,2,3}; 
+        int n=3;
+        int[][] dp = new int[n][W+1];
+        for(int[] row : dp) Arrays.fill(row,-1);
+        System.out.println(helper(W,wt,val,n,dp));
+    } 
+}
+```
+
+5. Leetcode 174 
+
+6. Matrix Chain Multiplication  
+
+                ABC 
+            /          \
+        (AB)C          A(BC)
+       /      \      /       \
+      AB       C    A        BC 
+     /  \                   /  \   
+    A    B                 B    C
+
+example : 
+arr  = {4 2 3 2}
+
+For window-size = 2,
+left = 1 
+right = 2 
+
+4 | 2 | 3 | 2 
+  L   K   R
+
+arr[L-1] x arr[K] x arr[R] 
+
+
