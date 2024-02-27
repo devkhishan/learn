@@ -669,4 +669,30 @@ right = 2
 
 arr[L-1] x arr[K] x arr[R] 
 
+# Date : 27 Feb 2024 (Day-2)
+
+## Morning  :
+
+1. Kaden's Algorithm 
+
+```Java 
+long maxSubarraySum(int arr[], int n){
+    
+        long macs = arr[0]; 
+        long curr = arr[0];
+        for(int i=1;i<n;i++){
+            if (curr<0) curr = 0;
+            curr += arr[i]; 
+            macs = Math.max(curr,macs);
+        }
+        
+        return macs;
+        // Your code here
+        
+    }
+``` 
+
+2. Leetcode 1020 - BFS
+
+3. Leetcode 130 - BFS
 
