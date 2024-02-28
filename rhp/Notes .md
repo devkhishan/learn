@@ -696,3 +696,62 @@ long maxSubarraySum(int arr[], int n){
 
 3. Leetcode 130 - BFS
 
+# Date : 28 Feb 2024 (Day-3)
+
+## Morning  :
+
+1. Class Complexity : **9:00 A.M.**
+    - Polynomial := Deterministic Time
+        * Linear Search - *O(n)* 
+        * Binary Search - *O(log n)* 
+        * Merge Sort - *O(n log n)* 
+        * Matrix Multiplication - *O(n<sup>3</sup>)*
+    - Exponential := Non-Deterministic Time 
+        * 0/1 Knapsack - *O(2<sup>n</sup>)* 
+        * Walting 
+        * Graph Color Codes
+
+    - P (Polynomial)
+        * Tractable := You can find the solution and verify the solution then it is said to be Tractable
+        * Ex : GCD (Euclid's Algorithm)
+    - NP (Non-Polynomial := Non-Deterministic)
+        * It's difficult to find the solution but it's easy to verify
+        * Ex : 0/1 Knapsack
+    - CoNP (Complement of Non-Polynomaial)
+        * If X is the problem that can be solved through NP, then X' should also exists to make the problem to be termed as coNP
+        * Ex : Prime Number (We are checking for the false first i.e., whether the number is divisible by its predecors  to return the true)
+    - NP hard 
+        * Satisfiability 
+        * Reducability - If A and B are two problems, where if it possible to solve A with the help of algo used to solve B
+    - NP Complete
+
+<svg width="400" height="200">
+  <circle cx="100" cy="100" r="60" stroke="white" stroke-width="2" fill="none" />
+  <circle cx="70" cy="100" r="20" stroke="white" stroke-width="2" fill="none" />
+  <circle cx="190" cy="100" r="60" stroke="white" stroke-width="2" fill="none" />
+  <text x="95" y="135" font-size="14" fill="white">NP</text>
+  <text x="65" y="105" font-size="14" fill="white">P</text>
+  <text x="140" y="90" font-size="14" fill="white">N</text>
+  <text x="140" y="105" font-size="14" fill="white">P</text>
+  <text x="140" y="120" font-size="14" fill="white">C</text>
+  <text x="170" y="100" font-size="14" fill="white">NP Hard</text>
+</svg>
+
+2. Tries : **10:00 A.M.**
+    - Prefix Tree 
+    - Digital Tree
+    - Retrieval Tree
+
+  Why Tries not Trees ? 
+    * Children 'K' or 'N'
+    * Tries DS := K-ary Tree
+    * In pictorial representation the root node will always be null
+    * All common prefixes will have shared memory space
+
+    * Time Complexities 
+        - Binary Tree - *O(n)* 
+        - AVL Tree - *O(log n)* 
+        - Tries - *O(L)* where L => Length of the word 
+        
+
+
