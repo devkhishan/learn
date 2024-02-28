@@ -747,11 +747,73 @@ long maxSubarraySum(int arr[], int n){
     * Tries DS := K-ary Tree
     * In pictorial representation the root node will always be null
     * All common prefixes will have shared memory space
-
     * Time Complexities 
         - Binary Tree - *O(n)* 
         - AVL Tree - *O(log n)* 
         - Tries - *O(L)* where L => Length of the word 
-        
 
+sideNote : Traversal on trees occurs in same manner, actions on traversal defines whether it is pre,post or in order traveresal
 
+3. Trie Implementation  
+
+```Java 
+class Trie {
+    Node root;
+
+    public Trie() {
+        root = new Node();  
+    }
+    
+    public void insert(String word) {
+         root.insert(word,0);
+    }
+    
+    public boolean search(String word) {
+        return root.search(word,0); 
+    }
+    
+    public boolean startsWith(String prefix) {
+        return root.startsWith(prefix,0);
+    }
+
+    class Node{
+        Node[] nodes; 
+        boolean EOW; 
+        Node(){
+            nodes = new Node[26]; 
+      
+        }
+
+        private void insert(String word,int index){
+            if (index==word.length()) return;
+            int i = word.charAt(index) - 'a'; 
+            if (nodes[i]==null) nodes[i] = new Node(); 
+
+            if (index==word.length()-1) nodes[i].EOW = true;
+            nodes[i].insert(word,index+1);
+        }
+
+        private boolean search(String word, int index){
+            Node node = nodes[word.charAt(index) - 'a'];
+            if(node==null) return false;  
+            if (index == word.length()-1) return node.EOW; 
+            return node.search(word,index+1); 
+        }
+
+        private boolean startsWith(String prefix, int index){
+            if (index == prefix.length()) return true;
+            Node node = nodes[prefix.charAt(index) - 'a'];
+            if(node==null) return false;  
+            return node.startsWith(prefix,index+1); 
+        }
+    }
+}
+
+/**
+ * Your Trie object will be instantiated and called as such:
+ * Trie obj = new Trie();
+ * obj.insert(word);
+ * boolean param_2 = obj.search(word);
+ * boolean param_3 = obj.startsWith(prefix);
+ */
+```
