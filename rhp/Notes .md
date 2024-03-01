@@ -817,3 +817,90 @@ class Trie {
  * boolean param_3 = obj.startsWith(prefix);
  */
 ```
+
+# Date : 29 Feb 2024 (Day-4)
+
+## Morning  :
+
+1. Tries with Dynamic Data Structures : **9:10 A.M.**
+
+2. Leetcode 42 
+
+```Java 
+ public int trap(int[] height) {
+        int[] leftMax = new int[height.length]; 
+        int[] rightMax = new int[height.length]; 
+        int leftTemp = 0, rightTemp = 0, ans = 0; 
+
+        for(int i=0;i<height.length;i++){
+            if (i==0) continue;
+            leftTemp = Math.max(leftTemp,height[i-1]); 
+            leftMax[i] = leftTemp; 
+
+            rightTemp = Math.max(rightTemp,height[height.length-i]);
+            rightMax[height.length-i-1] = rightTemp;
+        }
+
+        for(int i=0;i<height.length;i++){
+            if(leftMax[i]<height[i] || rightMax[i]<height[i]) continue; 
+            ans += Math.min(leftMax[i],rightMax[i]) - height[i]; 
+        }
+
+        return ans; 
+ }
+```
+
+# Date : 1 Mar 2024 (Day-5)
+
+## Morning  :
+
+1. Graph (Revision - Theory) : **9:00 A.M.**
+
+A grandchild node requires the parent node in order to contact with the grandparent node in Trees and this is solved by graphs where a node can connect with any other node independent of any other intermediate nodes.
+
+Eg: Used in Social Media Networks, Google Maps
+
+Two parts of graphs are : 
+    - Vertex 
+    - Edge
+
+Types of Graph Representation : 
+    - Adjaceny Matrix [ Vertex x Vertex ]
+    - Adjacency List ( Most efficient form )
+    - Edge List Graph [ { Relation1(Source,Destination,Weight) .... RelationN } ]
+    - Implicit Graph []
+
+Based on Edges : 
+    - Directed Graph 
+    - Undirected Graph
+
+Other Types : 
+    - Cyclic Graph 
+    - Acylic Graph
+    - Connected Graph => No isolated vertex
+    - Disconnected Graph 
+    - Complete Graph => Each and every node is connected to every other node in a cyclic graph 
+
+**[ Angle of vertex = No. of edges entering the vertex + No. of edges leaving the vertex ]**
+
+If you are given a **disconnected graph** then the better approach to solve the question is to **adjacency matrix**.
+
+*Time : 9:20 A.M. -> Completed Leetcode POTD + Graph Theory*
+
+*Time : 10:20 A.M. -> Done LeetCode 23 based on Priority Queue (Merge K Sorted Linked List)*
+
+*Time : 11:20 A.M. -> Done Edge List Graph Implementation in Java*
+
+*Time : 11:40 A.M. -> Learnt to use comparator in Java used in Leetcode 23*
+
+*Time : 12:50 P.M. -> Learnt Djikstra in Theory and Tried DFS in graphs*
+
+**[ Visited will only be used on Traversal methods in graphs whereas it will not be used in Trees ]**
+
+## Evening : 
+
+*Time : 1:40 P.M. -> Seems like it would take much time and patience to solve djikstra hence skipping to the next one*
+
+*Time : 2:10 P.M. -> Completed Skillrack DC and DT.  Revised Prims and Kruskals Theoretically*
+
+*Time : 2:40 P.M. -> Calling the day*
