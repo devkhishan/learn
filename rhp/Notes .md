@@ -1,4 +1,4 @@
-[Reference Notes](https://drive.google.com/drive/folders/1gU9n_ig0U08Hz36rthJDOspvG0R7g3eT) provided by Dharshith <br>
+[Reference Notes](https://drive.google.com/drive/folders/1gU9n_ig0U08Hz36rthJDOspvG0R7g3eT) provided by Darshith <br>
 [Reference Notes](http://surl.li/ptely) Session-4
 
 # Date : 22 Jan 2024 (Day-1)
@@ -911,3 +911,9 @@ If you are given a **disconnected graph** then the better approach to solve the 
 ## Morning  :
 
 1. Back Tracking - Problem Explanation *Time : 9:10 A.M.*
+
+2. Two good news happened 
+    - We officially ended up the college, only examination prevails 
+    - I have completed the java code which I have been struggling from morning (Rat in a Maze) : Code Time Taken -> *Time Spent : 2 hours 40 minutes : Current Time : 11:50 A.M.* 
+
+sideNote : "%g" removes trailing zeroes in printing (eg. removing extra zeros on float output)
