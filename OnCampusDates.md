@@ -17,17 +17,18 @@
 
 #### Mr.Cooper
 
-**Round 1** - Online Assessment
-**Round 2** - Programming
-**Round 3** - TECH (L1)
-**Round 4** - TECH (L2)
-**Round 5** - HR
+**Round 1** - Online Assessment  
+**Round 2** - Programming  
+**Round 3** - TECH (L1)  
+**Round 4** - TECH (L2)  
+**Round 5** - HR  
+
 #### Soliton
 
-**Round 1** - Online Preliminary MCQs
-**Round 2** -  Written Test
-**Round 3** - Programming Round 1  
-**Round 4** - Technical & HR round
-**Round 5** - Programming Round 2
-**Round 6** - Design round
-**Round 7** - Essay round
+**Round 1** - Online Preliminary MCQs  
+**Round 2** - Written Test  
+**Round 3** - Programming Round 1   
+**Round 4** - Technical & HR round  
+**Round 5** - Programming Round 2  
+**Round 6** - Design round  
+**Round 7** - Essay round  
