@@ -12,8 +12,8 @@
 | [Securin - 2](#securin) | May 20 | CS | Python Developer | 8
 | [Multicoreware](#multicoreware) | May 27 | CS | Software \| Research Engineer | 7.2 \| 10
 | [Zoho](#zoho) | Jul 18 | CS, EE, MECH | Software Developer | 8.4 \| 7 \| 5.6 |
-
-
+| [Triad Solutions](#triad-softwares) | Jul 24 | EE, MECH, CS | CAD/Web (Software)      Developer | 6.5 |
+| [Tech Mahendra](#tech-mahendra) | Aug 19 | EE, CS | - | 3.25 \| 4 \| 5.5 |
 
 ## Recruitment Round for Specific Organization
 
@@ -42,7 +42,6 @@
 **Round 3:** Video Interview  
 **Round 4:** Code for Good  
 
-
 #### Securin
 **Round 1:** Telephonic Interview  
 
@@ -63,3 +62,15 @@
 **Round 2:** Programming Test 1  
 **Round 3:** Programming Test 2  
 **Round 4:** Technical & HR Interview Results  
+
+#### Triad Softwares
+
+**Round 1:** Online Assessment  
+**Round 2:** Tech/HR  
+
+#### Tech Mahendra
+
+**Round 1:** Aptitude test (English Essay/Story Conversational Test)  
+**Round 2:** Technical & Psychometric Test  
+**Round 3:** Verbal Communication Test  
+**Round 4:** Technical Interview & HR   
