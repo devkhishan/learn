@@ -14,6 +14,10 @@
 | [Zoho](#zoho) | Jul 18 | CS, EE, MECH | Software Developer | 8.4 \| 7 \| 5.6 |
 | [Triad Solutions](#triad-softwares) | Jul 24 | EE, MECH, CS | CAD/Web (Software)      Developer | 6.5 |
 | [Tech Mahendra](#tech-mahendra) | Aug 19 | EE, CS | - | 3.25 \| 4 \| 5.5 |
+| [LTI Mindtree](#lti-mindtree) | Aug 21 | CS | Graduate Engineer Trainee | 4.05 |
+| [Kaartech](#kaar-technologies) | Aug 31 | CS, EE | Tech Sergeant & Tech Lieutenant | 6.5 \| 8 |
+| [Cognizant](#cognizant) | Sep 4 | CS, EE | Genc, Genc Pro, Genc Next | 4 \| 5.4 \| 6.75 |
+
 
 ## Recruitment Round for Specific Organization
 
@@ -74,3 +78,20 @@
 **Round 2:** Technical & Psychometric Test  
 **Round 3:** Verbal Communication Test  
 **Round 4:** Technical Interview & HR   
+
+#### LTI Mindtree
+
+**Round 1:** Online Assessment
+**Round 2:** Technical & HR Interview
+
+#### Kaar Technologies
+
+**Round 1:** Online test
+**Round 2:** Group Discussion
+**Round 3:** HR Interview
+
+#### Cognizant
+
+**Round 1:** Communication Assessment
+**Round 2:** Aptitude & Technical Assessment
+**Round 3:** Technical Interviews
