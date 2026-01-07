@@ -1,7 +1,12 @@
+use rand::Rng;
 use std::io;
 
 fn main() {
     println!("Guess the number!");
+
+    let secret_number = rand::rng().random_range(1..=100);
+
+    println!("The secress number is: {secret_number}");
 
     println!("Please enter your guess: ");
 
