@@ -11,4 +11,10 @@ fn main() {
     let truncated = -5 / 3;
 
     let remainder = 43 % 5;
+
+    // character types
+    let c = 'a';
+    let c: char = 'F';
+    let strong_emoji = '💪';
+    println!("{strong_emoji}");
 }
