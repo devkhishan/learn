@@ -17,4 +17,10 @@ fn main() {
     let c: char = 'F';
     let strong_emoji = '💪';
     println!("{strong_emoji}");
+
+    // compound types - tuple
+    let tup: (i64, f32, u8) = (5, 2.0, 15);
+    let (_x, _y, _z) = tup; // destructuring
+    let index_access = tup.2;
+    println!("{index_access}");
 }
