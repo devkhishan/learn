@@ -19,8 +19,16 @@ fn main() {
     println!("{strong_emoji}");
 
     // compound types - tuple
-    let tup: (i64, f32, u8) = (5, 2.0, 15);
+    let mut tup: (i64, f32, u8) = (5, 2.0, 15);
     let (_x, _y, _z) = tup; // destructuring
     let index_access = tup.2;
-    println!("{index_access}");
+    println!("Initial Tuple Index : {index_access}");
+
+    // updating tuple
+    tup.2 += 5;
+    let updated_index = tup.2;
+    println!("Tuple updated : {updated_index}");
+
+    let array = [1, 2, 3, 4, 10];
+    println!("Array : {:?}", array);
 }
