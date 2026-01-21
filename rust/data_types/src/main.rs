@@ -31,4 +31,11 @@ fn main() {
 
     let array = [1, 2, 3, 4, 10];
     println!("Array : {:?}", array);
+
+    let fixed_array: [i32; 3];
+    fixed_array = [1, 2, 3];
+    println!("Fixed Array : {:?}", fixed_array);
+
+    let duplicate_array = [-1; 5];
+    println!("Duplicate Array : {:?}", duplicate_array);
 }
