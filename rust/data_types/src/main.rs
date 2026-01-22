@@ -38,4 +38,7 @@ fn main() {
 
     let duplicate_array = [-1; 5];
     println!("Duplicate Array : {:?}", duplicate_array);
+
+    let element_access = array[0];
+    println!("Array first element : {element_access}");
 }
