@@ -40,8 +40,34 @@ fn main() {
                 }
             }
         }
-    */
+
     for number in (1..4).rev() {
         println!("Current: {number}");
     }
+    */
+    let mut n = String::new();
+    io::stdin().read_line(&mut n).expect("failed input");
+    // 0 1 1 2 3
+    let mut n: i64 = n.trim().parse().unwrap();
+    let val = n;
+    let mut f = 0;
+    let mut s = 1;
+    let ans = if n == 1 {
+        f
+    } else {
+        if n == 2 {
+            s
+        } else {
+            n -= 2;
+            while n != 0 {
+                let val = f + s;
+                f = s;
+                s = val;
+                n -= 1;
+                println!("{s}");
+            }
+            s
+        }
+    };
+    println!("{val} fibonacci no.: {ans}");
 }
